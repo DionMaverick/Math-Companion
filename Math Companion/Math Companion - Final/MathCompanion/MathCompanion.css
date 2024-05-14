@@ -1,8 +1,11 @@
-
+html{
+  height: 100%;
+}
 body{
     background: url(Media_240328_091711.gif);
     background-size: cover;
     background-repeat: no-repeat;
+    height: 100%;
 }
 .container {
     display: flex;
@@ -47,9 +50,41 @@ body{
 
   }
   .tagline {
-    margin: 0; /* Remove the default margin */
-    text-align: center; /* Center the text */
-    font-size: 24px; /* Adjust the font size if needed */
+    margin: 0; 
+    text-align: center; 
+    font-size: 24px; 
   }
   
+  @media (max-width: 600px) {
+      .container {
+          display: block; 
+          height: auto; 
+      }
   
+      .col {
+          height: auto; 
+          margin-bottom: 20px; 
+      }
+  
+      img {
+        margin-top: 30px;  
+        width: 80%; 
+      }
+  
+      p {
+          padding-left: 20px;
+          padding-right: 20px;
+          font-size: 18px; 
+      }
+  
+      h1 {
+          font-size: 30px; 
+      }
+      .tagline{
+        font-size: 20px;
+        margin-bottom: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-top: 20px; 
+      }
+}
