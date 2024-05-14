@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script> 
+            function Lyrics() {
+                var lyricsContainer = document.getElementById("gtna");
+                var button = document.getElementById("lyricsButton");
+
+                if (lyricsContainer.style.display === "none") {
+                    lyricsContainer.style.display = "block";
+                    button.textContent = "Hide Lyrics";
+                } else {
+                    lyricsContainer.style.display = "none";
+                    button.textContent = "Show Lyrics";
+                }
+            }
+
+            document.getElementById("lyricsButton").addEventListener("click", Lyrics);
+		</script>
+		<style>
+			body{
+				background-color: tomato;
+                text-align: center;
+                animation: ganyanKa 10s infinite alternate;
+			}
+			.container{
+				display: flex;
+                justify-content: center;
+                align-items: center;
+			}
+			.col{
+				border: 2px white solid;
+				flex: 1;
+			}
+            .col1{
+                float: left;
+                width: 18%;
+            }
+            .col3{
+                float: right;
+                width: 18%;
+            }
+			h1{
+				text-Align: center;
+				color: white;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+			}
+			h4{
+				text-Align: center;
+				color: white;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+			}
+			p{
+				text-Align: center;
+				font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+				color: white;
+			}
+			#gtna{
+				background-color: rgba(0,0,0,0.5);
+                width:200%;
+                border-radius: 30px;
+                padding: 40px;
+			}
+            h1{
+                margin-bottom: -10px;
+
+            }
+            button{
+                background-color: rgba(0,0,0,0.5);
+                color: white;
+                padding: 4px;
+                border-radius: 4px;
+                margin-bottom: 30px;
+                width: 40%;
+            }
+            @keyframes ganyanKa {
+            0% {
+                background-color: tomato;
+            }
+            25% {
+                background-color: rgb(217, 241, 110);
+            }
+            50% {
+                background-color: goldenrod;
+            }
+            75% {
+                background-color: lightgreen;
+            }
+            100% {
+                background-color: rgb(126, 183, 221);
+            }
+        }
+		</style>
+	</head>
+	<body>
+        <H4>VIRGILIO F. LUMBO II - ICT401</H4>			
+		<h1> FORTNIGHT </h1>
+		<h4> Taylor Swift feat. Post Malone </h4>
+		<button onclick="Lyrics()"> SHOW LYRICS / HIDE LYRICS</button>
+		<div class="container">
+
+			<div class="col1">
+				
+			</div>
+			<div class="col2" id="gtna">
+				<p> 
+					I was supposed to be sent away <br/>
+					But they forgot to come and get me <br/>
+					I was a functioning alcoholic <br/>
+					Til nobody noticed my new aesthetic <br/>
+					All of this to say <br/>
+					I hope you're okay <br/>
+					But you're the reason <br/>
+					And no one here's to blame <br/>
+					But what about your quiet treason? <br/>
+				</p>
+				<p>
+					And for a fortnight there <br/>
+					We were forever </br>
+					Run into you sometimes <br/>
+					Ask about the weather <br/>
+					Now you're in my backyard <br/>
+					Turned into good neighbors <br/>
+					Your wife waters flowers <br/>
+					I want to kill her. <br/>
+				</p>
+				<p>
+					All my mornings are Mondays <br/>
+					Stuck in an endless February <br/>
+					I took the miracle move-on-drug <br/>
+					The effects were temporary <br/>
+					And I love you <br/>
+					It's ruining my life <br/>
+					(I love you, it's ruining my life) <br/>
+					I touched you <br/>
+					For only a fortnight <br/>
+					(I touched you) <br/>
+					But I touched you <br/>
+				</p>
+				<p>
+					And for a fortnight there <br/>
+					We were together <br/>
+					Run into you sometimes <br/>
+					Comment on my sweater <br/>
+					Now you're at the mailbox <br/>
+					Turned into good neighbors <br/>
+					My husband is cheating <br/>
+					I want to kill him. <br/>
+				</p>
+				<p>
+					I love you <br/>
+					It's ruining my life <br/>
+					(I love you, it's ruining my life) <br/>
+					I touched you for only a fortnight <br/>
+					(I touched you) <br/>
+					I touched you <br/>
+				</p>
+				<p>
+					I love you <br/>
+					It's ruining my life <br/>
+					(I love you, it's ruining my life) <br/>
+					I touched you for only a fortnight <br/>
+					(I touched you) <br/>
+					I touched you <br/>
+				</p>
+				<p>
+					Thought of calling ya <br/>
+					But you won't pick up <br/>
+					Another fortnight lost in America <br/>
+					Move to Florida <br/>
+					Buy the car you want <br/>
+					But it won't start up <br/>
+					Til you touch, touch, touch me <br/>
+				</p>
+				<p>	
+					Thought of calling ya <br/>
+					But you won't pick up <br/>
+					Another fortnight lost in America <br/>
+					Move to Florida <br/>
+					Buy the car you want <br/>
+					But it won't start up <br/>
+					Til I touch, touch, touch you <br/>
+				</p>
+			</div>
+			<div class="col3">
+
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Companion </title>
+    <link rel="stylesheet" href="MathComp2DQTC.css">
+    <script src="MathComp2DQTC.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+    <link rel="icon" size="32x32" href="MCLOGOICON.png">
+</head>
+<body>
+    <div class="TopNav">
+        <div class="subTopNav" onclick="home()">
+            <img id="logo" src="MCLOGO.png" height="70px">
+        </div>
+        <div class="subTopNav1">
+        </div>
+    </div>
+    <div id="main" class="m">
+        <div class="left" id="left">
+            <div class="searchDIV">
+                <button id="Expand" onclick="Transq()">Expand</button>
+                <input type="text" class="searchBarM" id="searchbar" onkeyup="filter()" placeholder="  Search for Math Problems...">
+            </div>
+            <div class="2DQUAD">
+                <h2> 2D QUADRILATERALS</h2>
+            </div>
+            
+            <div id="problems">
+                <div id="firstrow" class="firstr" >
+                    <button id="hi" class="mathProb" onclick="Trans(); SquareA();">Area of a Square</button>
+                    <button id="hello" class="mathProb" onclick="Trans(); PerimeterSquare();">Perimeter of a Square</button>
+                    <button id="third" class="mathProb" onclick="Trans(); SQSIDELENGTHGIVENAREA();">Sides of a Square given the Area</button>
+                </div>
+                <div id="firstrow" class="firstr" >
+                    <button id="hi" class="mathProb" onclick="Trans(); SQSIDELENGTHGIVENPERIMETER();">Sides of a Square given the Perimeter</button>
+                    <button id="hello" class="mathProb" onclick="Trans(); squarediagonal();">Diagonal of a Square given the Side Length</button>
+                    <button id="third" class="mathProb" onclick="Trans(); DIAGONALOFASQUAREGIVENA()">Diagonal of a Square given the Area</button>
+                </div>
+                <div id="firstrow" class="firstr" >
+                    <button id="hi" class="mathProb" onclick="Trans(); RectangleArea();">Area of a Rectangle</button>
+                    <button id="hello" class="mathProb" onclick="Trans(); RectPeri();">Perimeter of a Rectangle</button>
+                    <button id="third" class="mathProb" onclick="Trans(); RectLengthGAW();">Length of a Rectangle given the Area and Width</button>
+                </div>
+                <div id="firstrow" class="firstr" >
+                    <button id="hi" class="mathProb" onclick="Trans(); RectWidthGAL()">Width of a Rectangle given the Area and Length</button>
+                    <button id="hello" class="mathProb" onclick="Trans(); RectLengthGPW();">Length of a Rectangle given the Perimeter and Width</button>
+                    <button id="third" class="mathProb" onclick="Trans(); RectWidthGPL();">Width of a Rectangle given the Perimeter and Width</button>
+                </div>
+                <H2> 2D CIRCLES</H2>
+                <div id="firstrow" class="firstr" >
+                    <button id="hi" class="mathProb" onclick="Trans(); DiameterOfCircleGivenR();">Diameter of a Circle given the Radius</button>
+                    <button id="hello" class="mathProb" onclick="Trans(); RadiusOfCircleGivenD();">Radius of a Circle given the Diameter</button>
+                    <button id="third" class="mathProb" onclick="Trans(); CircumferenceOfCircleGivenR();">Circumference of a Circle given the Radius</button>
+                </div>
+                <div id="firstrow" class="firstr" >
+                    <button id="hi" class="mathProb" onclick="Trans(); CircumferenceOfCircleGivenD();">Circumference of a Circle given the Diameter</button>
+                    <button id="hello" class="mathProb" onclick="Trans(); AreaOfCircleR();">Area of a Circle given the Radius</button>
+                    <button id="third" class="mathProb" onclick="Trans(); AreaOfCircleGivenD();">Area of a Circle given the Diameter</button>
+                </div>
+                <div id="firstrow" class="firstr" >
+                    <button id="hi" class="mathProb" onclick="Trans(); CircumCircleGA();">Circumference of a Circle given the Area</button>
+                    <button id="hello" class="mathProb" onclick="Trans(); ArcLength();">Arc Length</button>
+                    <button id="third" class="mathProb" onclick="Trans(); Sector();">Sector of a Circle</button>
+                </div>
+                <div id="firstrow" class="firstr" >
+                    <button id="hi" class="mathProb" onclick="Trans(); DiameterCircleGA();">DIameter of a Circle given the Area</button>
+                    <button id="hello" class="mathProb" onclick="Trans(); AreaCircleGC();">Area of a Circle given the Circumference</button>
+                    <button id="third" class="mathProb" onclick="Trans(); RadiusCircleGA();">Radius of a Circle given the Area </button>
+                </div>
+                <h2> 2D TRIANGLES</h2>
+                <div id="firstrow" class="firstr" >
+                    <button id="hi" class="mathProb" onclick="Trans(); PeriTriangle()">Perimeter of a Triangle</button>
+                    <button id="hello" class="mathProb" onclick="Trans(); AreaOfTriangle()">Area of a Triangle</button>
+                    <button id="third" class="mathProb" onclick="Trans(); HeightGivenBaseArea()">Height of a triangle given the base and area</button>
+                </div>
+                <div id="firstrow" class="firstr" >
+                    <button id="hi" class="mathProb" onclick="Trans(); TriangleBaseGivenHA()">Base of a triangle given the height and area</button>
+                    <button id="hello" class="mathProb" onclick="Trans(); PythagoreanTheorem()">Pythagorean Theorem (Hypotenuse)</button>
+                    <button id="third" class="mathProb" onclick="Trans(); LegOfRightTriangle()"> Leg of a Triangle given the hypothenuse and another leg</button>
+                </div>
+                <div id="firstrow" class="firstr" >
+                    <button id="hi" class="mathProb" onclick="Trans(); AreaOfEquilateralTriangle()"> Area of an equilateral triangle given the Side Length</button>
+                    <button id="hello" class="mathProb" onclick="Trans(); SideLengthOfEquiTri()"> Side Length of a triangle given the area of an equilateral triangle</button>
+                    <button id="third" class="mathProb" onclick="Trans(); AreaOfIsoscelesTri()"> Area of an isosceles triangle</button>
+                </div>
+                <div id="firstrow" class="firstr" >
+                    <button id="hi" class="mathProb" onclick="Trans(); BaseOfIsoscelesTriangle()"> Base of an isosceles triangle given the area and height</button>
+                    <button id="hello" class="mathProb" onclick="Trans(); HeightOfIsoscelesTriangle()"> Height of an isosceles triangle given the area and base</button>
+                    <button id="third" class="mathProb" > N/A </button>
+                </div>
+            </div>
+        </div>
+        <div class="right" id="right">
+            
+        </div>
+    </div>
+
+    <script>
+        function Trans() {
+            var left = document.getElementById("left");
+            var right = document.getElementById("right");
+
+            if (right.style.width === "30%") {
+                right.style.width = "0%";
+                left.style.width = "100%";
+            } else {
+                right.style.width = "70%";
+                left.style.width = "30%";
+            }
+        }
+
+        function filter() {
+            var input = document.getElementById("searchbar");
+            var filter = input.value.toUpperCase();
+            var container = document.getElementById("problems");
+            var buttons = container.getElementsByTagName("button");
+
+            for (var i = 0; i < buttons.length; i++) {
+                var btn = buttons[i];
+                var txtValue = btn.textContent || btn.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    btn.style.display = "";
+                } else {
+                    btn.style.display = "none";
+                }
+            }
+        }
+        function Transq() {
+            var left = document.getElementById("left");
+            var right = document.getElementById("right");
+
+            if (right.style.width === "30%") {
+                right.style.width = "0%";
+                left.style.width = "100%";
+            } else {
+                right.style.width = "0%";
+                left.style.width = "100%";
+            }
+        }
+    </script>
+</body>
+</html>
+

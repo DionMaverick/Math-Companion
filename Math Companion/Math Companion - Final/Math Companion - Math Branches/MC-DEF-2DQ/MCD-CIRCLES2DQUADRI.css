@@ -1,0 +1,101 @@
+.TopNav {
+    align-items: center;
+    display: flex;
+    margin: 0 auto;
+    padding: 5px;
+    width: 99.3%;
+    height: 10%;
+    background-color: rgba(0,0,0,0.5);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.subTopNav {
+    flex: 1;
+    display: flex;
+    align-items: center; 
+    justify-content:first baseline;
+
+}
+.webtitle{
+    padding-left: 10px;
+}
+.subTopNav1{
+    flex: 1;
+    display: flex;
+}
+body{
+    background: url(Media_240328_091711.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+*{
+    margin: 0;
+    font-family: "Alata", sans-serif;
+    color: white;
+}
+.container{
+    display: flex;
+    margin-top: 60px;
+    
+}
+.col{
+    flex: 1;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.row{
+    display: flex;
+    border: 2px solid white;
+    align-items: center;
+    padding: 13px;
+    margin-right: 20px;
+    background-color: rgba(0,0,0,0.5);
+    margin-bottom: 20px;
+    border-radius: 10px
+}
+.rows{
+    display: flex;
+    border: 2px solid white;
+    align-items: center;
+    padding: 13px;
+    margin-right: 20px;
+    background-color: rgba(0,0,0,0.5);
+    margin-bottom: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+.term{
+    text-align: center;
+    font-size: 30px;
+    padding-top: 0;
+    padding-bottom: 5px;
+}
+.def{
+    text-align: center;
+    font-size: 18px;    
+}
+
+.subTopNav1 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; 
+    margin: 0;
+    padding: 0;
+}
+
+#backButton {
+    display: flex;
+    align-items: center;
+}
+
+.backbut {
+    margin-right: 25px; 
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+#backButton:hover{
+    height: 10px;
+    padding: 5px;
+}

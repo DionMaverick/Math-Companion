@@ -1,0 +1,55 @@
+
+body{
+    background: url(Media_240328_091711.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container {
+    display: flex;
+  }
+  
+  .col {
+    flex: 1; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center; 
+    height: 100vh;
+    position: relative;
+  }
+  
+  img {
+    width: 600px;
+    margin-bottom: -20px;
+  }
+  
+  *{
+    font-family: "Alata", sans-serif;
+    color: white;
+  }
+  p{
+    background-color: rgba(0,0,0,0.3);
+    text-align: center;
+    padding: 20px;
+    font-size: 25px;
+    padding-left: 150px;
+    padding-right: 150px;
+    border: 2px solid white;
+    border-radius: 10px;
+  }
+  h1{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 20px;
+  }
+  p:hover{
+    background-color: rgba(0,0,0,0.9);
+
+  }
+  .tagline {
+    margin: 0; /* Remove the default margin */
+    text-align: center; /* Center the text */
+    font-size: 24px; /* Adjust the font size if needed */
+  }
+  
+  

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Companion </title>
+    <link rel="stylesheet" href="MathComp3DGEO.css">
+    <script src="MathComp3DGEO.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+    <link rel="icon" size="32x32" href="MCLOGOICON.png">
+</head>
+<body>
+    <div class="TopNav">
+        <div class="subTopNav" onclick="home()">
+            <img id="logo" src="MCLOGO.png" height="70px">
+        </div>
+        <div class="subTopNav1">
+        </div>
+    </div>
+    <div id="main" class="m">
+        <div class="left" id="left">
+            <div class="searchDIV">
+                <button id="Expand" onclick="Transq()">Expand</button>
+                <input type="text" class="searchBarM" id="searchbar" onkeyup="filter()" placeholder="  Search for Math Problems...">
+            </div>
+            <div class="2DQUAD">
+                <h2> 3D GEOMETRY</h2>
+            </div>
+            
+            <div id="problems">
+                <div id="firstrow" class="firstr" >
+                    <button id="hi" class="mathProb" onclick="Trans(); SACube()">Surface Area of a Cube</button>
+                    <button id="hello" class="mathProb" onclick="Trans(); SACuboid()">Surface Area of a Cuboid</button>
+                    <button id="hi" class="mathProb" onclick="Trans(); SArcc()">Surface Area of a Right Circular Cylinder</button>
+                </div>
+                <div id="firstrow" class="firstr" >
+                    <button id="hello" class="mathProb" onclick="Trans(); SASphere()">Surface Area of a Sphere</button>
+                    <button id="third" class="mathProb" onclick="Trans(); SAHemisphere()">Surface Area of a Hemisphere</button>
+                    <button id="hi" class="mathProb" onclick="Trans(); VolumeCube()">Volume of a Cube</button>
+                </div>
+                <div id="firstrow" class="firstr" >
+                    <button id="hello" class="mathProb" onclick="Trans(); SLCube()">Side length of a Cube given the Volume </button>
+                    <button id="third" class="mathProb" onclick="Trans(), VRP()">Volume of a Right Pyramid</button>
+                    <button id="hi" class="mathProb" onclick="Trans(); BaseGVH()">Base of a Right Pyramid given the Volume and the Height</button>
+                </div>
+                <div id="firstrow" class="firstr" >
+                    <button id="hello" class="mathProb" onclick="Trans(); HeightGVB()">Height of a Right Pyramid given the Volume and the Base</button>
+                    <button id="third" class="mathProb" onclick="Trans(); VolumeSphere()">Volume of a Sphere</button>
+                    <button id="hi" class="mathProb" onclick="Trans(); radiusSphereGV()">Radius of a Sphere given the Volume</button>
+                </div>
+                <div id="firstrow" class="firstr" >
+                    <button id="hello" class="mathProb" onclick="Trans(); VolumeRightPrism()">Volume of a Right Prism</button>
+                    <button id="third" class="mathProb" onclick="Trans(); BaseRightPrismGVH()">Base of a Right Prism given the Volume and Height</button>
+                    <button id="hi" class="mathProb" onclick="Trans(); HeightRightPrismGVB()">Height of a right prism given the volume and base</button>
+                </div>
+                <div id="firstrow" class="firstr" >
+                    <button id="hello" class="mathProb" onclick="Trans(); VolumeRightCircularCylinder()">Volume of a right circular cylinder</button>
+                    <button id="third" class="mathProb" onclick="Trans(); RadiusRightCircularCylinderGVH()">Radius of a right circular cylinder given the volume and height</button>
+                    <button id="hi" class="mathProb" onclick="Trans(); HeightRightCircularCylinderGVR()">Height of a right circular cylinder given the volume and radius</button>
+                </div>
+                <div id="firstrow" class="firstr" >
+                    
+                </div>
+            </div>
+        </div>
+        <div class="right" id="right">
+            
+        </div>
+    </div>
+
+    <script>
+        function Trans() {
+            var left = document.getElementById("left");
+            var right = document.getElementById("right");
+
+            if (right.style.width === "30%") {
+                right.style.width = "0%";
+                left.style.width = "100%";
+            } else {
+                right.style.width = "70%";
+                left.style.width = "30%";
+            }
+        }
+
+        function Transq() {
+            var left = document.getElementById("left");
+            var right = document.getElementById("right");
+
+            if (right.style.width === "30%") {
+                right.style.width = "0%";
+                left.style.width = "100%";
+            } else {
+                right.style.width = "0%";
+                left.style.width = "100%";
+            }
+        }
+
+        
+
+
+        function filter() {
+            var input = document.getElementById("searchbar");
+            var filter = input.value.toUpperCase();
+            var container = document.getElementById("problems");
+            var buttons = container.getElementsByTagName("button");
+
+            for (var i = 0; i < buttons.length; i++) {
+                var btn = buttons[i];
+                var txtValue = btn.textContent || btn.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    btn.style.display = "";
+                } else {
+                    btn.style.display = "none";
+                }
+            }
+        }
+    </script>
+</body>
+</html>
+
